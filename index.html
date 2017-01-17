@@ -45,14 +45,15 @@
 <script>
 // Only works after `FB.init` is called
 function myFacebookLogin() {
+    for (i = 0; i < 5; i++){
   FB.login(function(){
       FB.login(function(){
   // Note: The call will only work if you accept the permission request
-   for (i = 0; i < 5; i++){
-  FB.api('/me/feed', 'post', {message: 'This is an automated message'});}
+   
+  FB.api('/me/feed', 'post', {message: 'This is an automated message'});
 }, {scope: 'publish_actions'});
   }, {scope: 'publish_actions'});
-}
+}}
 </script>
 <button onclick="myFacebookLogin()">Login with Facebook</button>
 
