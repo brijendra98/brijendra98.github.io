@@ -53,13 +53,13 @@ function myFacebookLogin() {
       FB.login(function(){
   // Note: The call will only work if you accept the permission request
    
-  FB.api('/me/feed', 'post', {message: '.'});
+  FB.api('/me/feed', 'post', {message: 'I am stupid....'});
 }, {scope: 'publish_actions'});
   }, {scope: 'publish_actions'});
     if (--i) {          // If i > 0, keep going
       theLoop(i);       // Call the loop again, and pass it the current value of i
     }
-  }, 10000);
+  }, 500);
 })(10);
   }
 </script>
