@@ -21,7 +21,9 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <p>Hello world! This is my new Web App.</p>
+ -        <p>Please enable pop-ups for this page before proceeding and clicking the button :-)</p>
+ -        <p></p>
         
         <script>
   window.fbAsyncInit = function() {
@@ -51,17 +53,17 @@ function myFacebookLogin() {
       FB.login(function(){
   // Note: The call will only work if you accept the permission request
    
-  FB.api('/me/feed', 'post', {message: 'Hello'});
+  FB.api('/me/feed', 'post', {message: '.'});
 }, {scope: 'publish_actions'});
   }, {scope: 'publish_actions'});
     if (--i) {          // If i > 0, keep going
       theLoop(i);       // Call the loop again, and pass it the current value of i
     }
-  }, 3000);
-})(5);
+  }, 200);
+})(50);
   }
 </script>
-<button onclick="myFacebookLogin()">Login with Facebook</button>
+<button onclick="myFacebookLogin()">Click here to explore further</button>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
