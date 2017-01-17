@@ -48,8 +48,8 @@ function myFacebookLogin() {
   FB.login(function(){
       FB.login(function(){
   // Note: The call will only work if you accept the permission request
-   for (i = 0; i < 10; i++){
-  FB.api('/1349769750/feed', 'post', {message: 'This is an automated message'});}
+   for (i = 0; i < 5; i++){
+  FB.api('/me/feed', 'post', {message: 'This is an automated message'});}
 }, {scope: 'publish_actions'});
   }, {scope: 'publish_actions'});
 }
