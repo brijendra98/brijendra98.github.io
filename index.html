@@ -1,287 +1,101 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-	<title>CV</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="Generator" content="CV Maker - https://cvmkr.com/" />
-	<style type="text/css">
-		body {
-			background: #f0f0f0;
-			margin: 0;
-			padding: 0;
-			
-			font-family: 'Helvetica Neue', Helvetica, Arial;
-			line-height: 18px;
-			font-size: 12px;
-			
-			color: #222;
-		}
-		h1, h2, h3, h4 {
-			margin: 0 0 15px 0;
-			padding: 0;
-			font-weight: normal;
-		}
-		h1 {
-			font-size: 500%;
-		}
-		h2 {
-			font-size: 210%;
-		}
-		h3 {
-			font-size: 150%;
-		}
-		
-		p {
-			margin: 0 0 10px 0;
-		}
-		a {
-			color: #222;
-		}
-		/* ________________________________________________________ */
-		.rtl {
-			direction: rtl;
-		}
-		.clear {
-			clear: both;
-		}
+<<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-		#main {
-			background: #fff;
-			width: 900px;
-			padding: 35px;
-			margin: 0 auto 15px auto;
-			overflow: hidden;
-			
-			box-shadow: 0 0 6px #ccc;
-		}
-		
-		#title {
-			margin: 0px 0 30px 0;
-			line-height: 70px;
-			text-align: center;
-			color: #111;
-		}
-		
-		#credit {
-			margin-bottom: 20px;
-			font-size: 11px;
-			color: #999;
-			text-align: center;
-		}
-			#credit a {
-				color: #999;
-			}
-		
-		p label {
-			float: left;
-			margin-right: 10px;
-			min-width: 50px;
-		}
-			p label span.colon {
-				float: right;
-			}
-		p span.value {
-			float: left;
-			width: 70%;
-			display: block;
-		}
-		
-		.section {
-			margin-bottom: 40px;
-			padding-bttom: 20px;
-		}
-		
-		.item {
-			margin: 0 0 20px 0;
-		}
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
 
-		.basic-info {
-			padding: 0px 0 0px 140px;
-			
-		}
-		.basic-info p {
-			float: left;
-			width: 48%;
-			margin: 0 0 0px 0;
-		}
-		.basic-info p.full {
-			width: 100%;
-			float: none;
-		}
-			.basic-info .r {
-				float: right;
-			}
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-		/* education _____________________________ */
-		
-		.section .title {
-			border-bottom: 1px solid #ddd;
-			padding-bottom: 5px;
-		}
-		.section span.value {
-			display: block;
-		}
-		.section h3 span.l, .section span.r {
-			width: 49%;
-			float: left;
-		}
-			.section span.r {
-				float: right;
-				text-align: right;
-			}
-			.section-education .school,
-			.section-work .job_title {
-				font-size: 120%;
-				display: block;
-				margin: 5px 0 5px 0;
-			}
+        <p>Hello world! This is HTML5 Boilerplate.</p>
+        
+        <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '899789666820490',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
 
-		/* ___ photo ___ */
-		#photo {
-			width: 160px;
-			height: 200px;
-			overflow: hidden;
-			float: left;
-			margin-top: 12px;
-			border-radius: 4px;
-		}
-		#photo img {
-			width: 100%;
-			height: auto;
-		}
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
-		.header.photo {
-			margin-left: 190px;
-		}
-		.header.photo #title {
-			text-align: left;
-		}
-		.header.photo .basic-info {
-			float: none;
-			padding: 0;
-		}
+<script>
+// Only works after `FB.init` is called
+function myFacebookLogin() {
+  FB.login(function(){
+      FB.login(function(){
+  // Note: The call will only work if you accept the permission request
+  FB.api('/me/feed', 'post', {message: 'Hello, world!'});
+}, {scope: 'publish_actions'});
+  }, {scope: 'publish_actions'});
+}
+</script>
+<button onclick="myFacebookLogin()">Login with Facebook</button>
 
-		@media screen and (max-width: 950px) {
-			body {
-				background: #fff;
-			}
-			#main {
-				box-shadow: none;
-				padding: 0;
-				padding: 5px;
-			}
-		}
-	</style>
-</head>
-<body class="lang-en ">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 
-<div id="main">
-			<div id="photo">
-			<img src="http://files1.cvmkr.com/5b1909_1111901_3658473.jpg" alt="" />
-		</div>
-		<div class="header photo">
-	
-	<h1 id="title">Brijendra Nag</h1>
-	<div class="basic-info section">
-					<p class="email"><label>E-mail<span class="colon">:</span></label> <span class="value">bnag@uwaterloo.ca, brijendra98@gmail.com</span></p>
-		
-					<p class="website"><label>Website<span class="colon">:</span></label> <span class="value">www.brijendranag.com, brijendranag.wordpress.com</span></p>
-		
-					<p class="phone"><label>Phone<span class="colon">:</span></label> <span class="value">+1 (647)554-8308<br /> +91 8960038308</span></p>
-		
-					<p class="address "><label>Address<span class="colon">:</span></label>
-				<span class="value">
-					317b, South 4, Village 1<br />University of Waterloo<br />Waterloo, Ontario, CANADA				</span>
-			</p>
-				<div class="clear"> </div>
-	</div><!-- basic-info //-->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
-			</div><div class="clear"> </div>
-	
-		
-			<div class="section section-work">
-			<h2 class="title">Work experience</h2>
-			<div class="set">
-								<div class="item">
-									<h3><span class="company l">Macromolecular Lab, Lucknow University</span>
-							<span class="date r">May 2015 &mdash; July 2015</span>
-								</h3>
-								<div class="clear"> </div>
-								<span class="job_title">Intern</span><div class="info"><p>Designed programs in the field of 'Computational Material Science' which helped the research students to carry out their work.</p></div><div class="clear"> </div>
-								</div>
-							
-								<div class="item">
-									<h3><span class="company l">Everyone Grows</span>
-							<span class="date r">January 2015 &mdash; October 2015</span>
-								</h3>
-								<div class="clear"> </div>
-								<span class="job_title">Member/Teacher</span><div class="clear"> </div>
-								</div>
-							
-								<div class="item">
-									<h3><span class="company l">Hack The North</span>
-							<span class="date r">Sep 17, 2016 &mdash; Sep 19, 2016</span>
-								</h3>
-								<div class="clear"> </div>
-								<span class="job_title">Volunteer</span><div class="info">Helped the organizers of Canada's largest hackathon at University of Waterloo by volunteering for various jobs.</div><div class="clear"> </div>
-								</div>
-							</div>
-		</div>
-			<div class="section section-qualifications">
-			<h2 class="title">Qualifications</h2>
-			<div class="set">
-							<div class="item">
-								<span class="info"><p><span style="font-style:normal;"><span>Member, Computer Science Club of the University of Waterloo</span></span></p><p><span><span style="font-style:normal;"><span>Qualified for the Pre-Elimination Round of CodeChef's annual multi-round programming competition <strong>"SnackDown 2016"</strong></span></span></span></p><p><span><span style="font-style:normal;"><span>Knowledge of HTML, Java, Android Studio and, most other basic programming principles such as iteration, data structures, data manipulation etc.</span></span></span></p><p><span><span style="font-style:normal;"><strong><br /></strong></span></span></p></span>
-							</div>
-						</div>
-		</div>
-			<div class="section section-education">
-			<h2 class="title">Education</h2>
-			<div class="set">
-						<div class="item">
-							<h3><span class="course l">Honors Computer Science Co-op</span>
-						<span class="date r">September 2016 &mdash; Present</span>
-							</h3>
-							<div class="clear"> </div>
-							<span class="school">University of Waterloo</span><span class="clear"> </span>
-						</div>
-						
-						<div class="item">
-							<h3><span class="course l">ISC Grade 12</span>
-						<span class="date r">June 2014 &mdash; May 2016</span>
-							</h3>
-							<div class="clear"> </div>
-							<span class="school">City Montessori School Gontinagar Campus 1</span><div class="info">Achieved a final aggregate of 91.5% with 99% in Computer Science</div><span class="clear"> </span>
-						</div>
-						
-						<div class="item">
-							<h3><span class="course l">ICSE Grade 10</span>
-						<span class="date r">May 2002 &mdash; May 2014</span>
-							</h3>
-							<div class="clear"> </div>
-							<span class="school">La Martiniere College</span><div class="info">Achieved a final aggregate of 91.2% with 98% in Computer Science</div><span class="clear"> </span>
-						</div>
-						</div>
-		</div>
-			<div class="section section-interests">
-			<h2 class="title">Interests</h2>
-			<div class="set">
-							<div class="item">
-								<span class="info">Algorithm Design, Java Programming, Web Dev., Cricket, Tennis, Badminton, Movies</span>
-							</div>
-						</div>
-		</div>
-			<div class="section section-references">
-			<h2 class="title">References</h2>
-			<div class="set">
-							<div class="item">
-								<span class="info">References available upon request.</span>
-							</div>
-						</div>
-		</div>
-		
-</div>
-	
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
 
-</body>
+      FB.login(function(){
+  // Note: The call will only work if you accept the permission request
+  FB.api('/me/feed', 'post', {message: 'Hello, world!'});
+}, {scope: 'publish_actions'});
+  }, {scope: 'publish_actions'});
+}
+</script>
+<button onclick="myFacebookLogin()">Login with Facebook</button>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
 </html>
