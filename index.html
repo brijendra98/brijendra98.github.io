@@ -9,6 +9,7 @@
     <title>Brijendra Nag</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -21,13 +22,16 @@
                 <a href="#about">About</a>
             </li>
             <li>
-                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#github">GitHub</a>
             </li>
             <li>
                 <a href="#skills">Skills & Tools</a>
             </li>
             <li>
-                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
             </li>
             <li>
                 <a href="#education">Education</a>
@@ -91,7 +95,15 @@
             </div>
         </div>
     </div>
-    <div id="skills">
+
+    <div id="github">
+       <h2 class="heading">GitHub</h2>
+       <div class="calendar">
+           Loading the data just for you...
+       </div>
+    </div>
+
+    <div id="skills" class="background-alt">
        <h2 class="heading">Skills and Tools</h2>
        <ul></a>
            <li>Java</li>
@@ -115,7 +127,8 @@
            <li>Python</li>
        </ul>
    </div>
-    <div id="projects" class="background-alt">
+
+    <div id="projects">
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
@@ -175,9 +188,8 @@
             </div>
         </div>
     </div>
-    <div id="education">
+    <div id="education" class="background-alt">
         <h2 class="heading">Education</h2>
-
         <div class="education-block">
             <h3>University of Waterloo</h3>
             <span class="education-date">September 2016 - Present</span>
@@ -209,7 +221,6 @@
             </p>
         </div>
     </div>
-
 
     <div id="contact">
         <h2>Get in Touch</h2>
@@ -263,6 +274,8 @@
     <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <script>GitHubCalendar(".calendar", "brijendra98")</script>
     <script src="js/scripts.min.js"></script>
 </body>
 
