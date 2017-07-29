@@ -8,8 +8,9 @@
     <meta name="referrer" content="origin" />
     <title>Brijendra Nag</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css" />
     <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -131,12 +132,35 @@
     <div id="projects">
         <h2 class="heading">Projects</h2>
         <div class="container">
-            <div class="row">
+
+          <div class="ui three stackable cards">
+            <div class="card">
+              <div class="image">
+                  <img src="images/caffeine.png">
+              </div>
+              <div class="content">
+                  <div class="header">Caffeine</div>
+              </div>
+              <div class="content">
+                <div class="description">
+                  Won the 2nd place Prize at Start Hacks for this product which prevents people from being unattentive while driving their car. Used the Muse headband to get brain-wave and acclerometer data which was utilized in an Android application to alert the user whenever they are found to be unattentive.
+                </div>
+              </div>
+              <div class="content">
+                <div class="three massive ui buttons">
+                  <button class="ui button"><i class="github alternate icon"></i></button>
+                  <button class=" ui button"><i class="info icon"></i></button>
+                  <button class=" ui button"><i class="video play icon"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!--    <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/Caffeine.png" />
+                        <img src="images/caffeine.png" />
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3><a href="https://brijendra98.github.io/Caffeine/" target="_blank">Caffeine</a></h3>
                         <p>
@@ -185,7 +209,9 @@
                     </div>
                 </div>
 
-            </div>
+            </div>-->
+
+
         </div>
     </div>
     <div id="education" class="background-alt">
@@ -274,6 +300,7 @@
     <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.js"></script>
     <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
     <script>GitHubCalendar(".calendar", "brijendra98")</script>
     <script src="js/scripts.min.js"></script>
